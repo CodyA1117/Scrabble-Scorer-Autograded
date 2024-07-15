@@ -154,7 +154,7 @@ function transform(oldPointStructure) {
 }
 
 newPointStructure = transform(oldPointStructure);
-
+//This is for running the program, I call functions and assign them to veriables to use for the final score of the word.
 function runProgram() {
 let word = initialPrompt();
 let selectedAlgorithm = scorerPrompt();
