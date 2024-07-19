@@ -34,9 +34,9 @@ function oldScrabbleScorer(word) {
 // don't change the names or your program won't work as expected. //
 //Here we are taking user input and using it as our word parameter.
 function initialPrompt() {
-   console.log("Let's play some scrabble!");
+   console.log("Let's play some scrabble!\n");
    const word = readlineSync.question("Enter a word to score:");
-   console.log(oldScrabbleScorer(word));
+   // console.log(oldScrabbleScorer(word));
    return word;
    
    
@@ -129,7 +129,7 @@ const scoringAlgorithms = [
 //Prompting the user to select which algorithm to use.
 //Uses our objects above.
 function scorerPrompt() {
-   console.log("Which scoring algorithm would you like to use? ");
+   console.log("Which scoring algorithm would you like to use? \n");
    console.log("0 - Simple: One point per character");
    console.log("1 - Vowel Bonus: Vowels are worth 3 points");
    console.log("2 - Scrabble: Uses scrabble point system");
@@ -159,7 +159,7 @@ function runProgram() {
 let word = initialPrompt();
 let selectedAlgorithm = scorerPrompt();
 let score = selectedAlgorithm.scorerFunction(word);
-console.log(`Score for ${word}:\n${score}`);
+console.log(`Score for '${word}': ${score}`);
    
 }
 
